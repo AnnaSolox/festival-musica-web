@@ -1,3 +1,8 @@
+@use 'base/variables' as v;
+
 body {
-    background-color: green;
+    font-family: v.$fuente_principal;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: v.$negro;
 }

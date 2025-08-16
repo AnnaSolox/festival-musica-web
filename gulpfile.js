@@ -6,12 +6,12 @@ const sass = gulpSass(dartSass); //enlazamos gulp con sas
 
 export function css( done ) {
     src('src/scss/app.scss') // source
-        .pipe( sass() ) // aplicar sass con la relación hecha previamente
+        .pipe(sass().on('error', sass.logError)) // aplicar sass con la relación hecha previamente
         .pipe( dest('build/css')) // carpeta destino
 
     done();
 }
 
 export function dev() { // no pasamos el done para que no termine y siga escuchando por cambios
-    watch('src/scss/app.scss', css); // observará el archivo scss y ejecutará la función css cada vez
+    watch('src/scss/**/*.scss', css); // observará el archivo scss y ejecutará la función css cada vez
 }
