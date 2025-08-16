@@ -1,0 +1,19 @@
+{
+  "name": "festival-musica-web",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS y NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "AnnaSolox",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.90.0"
+  }
+}
