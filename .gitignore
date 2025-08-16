@@ -48,5 +48,3 @@ Thumbs.db
 # =====================
 docker-compose.override.yml
 .docker/
-.devcontainer/
-Dockerfile
