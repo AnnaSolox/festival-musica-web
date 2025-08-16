@@ -1,0 +1,6 @@
+//@use se utiliza cuando queremos acceder a algunas variables mediante el namespace.
+//se utiliza en lugar de @import porque @use previene duplicidades de código
+//@forward se utiliza para importar todo el contenido de una hoja de estilos (p.ej. normalize)
+@forward 'normalize';
+@forward 'variables';
+@forward 'globales';
