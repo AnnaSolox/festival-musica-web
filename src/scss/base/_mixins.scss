@@ -1,0 +1,25 @@
+@use 'variables' as v;
+
+@mixin telefono { // crear componentes reutilizables
+    @media (min-width: v.$telefono) {
+        @content; // forma de incluir contenido dinámico en un mq
+    }
+}
+
+@mixin tablet { 
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop { 
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+@mixin desktopXL { 
+    @media (min-width: v.$desktopXL) {
+        @content;
+    }
+}
