@@ -98,22 +98,98 @@ Se añade el nombre del compilador y dentro del script escribimos el nombre que 
   }
 ```
 
->!TIP
->Para poder ver en vivo los cambios que se realizan en la hoja de estilos scss debemos activar el modo watch en el script del siguiente modo:
+> !TIP
+> Para poder ver en vivo los cambios que se realizan en la hoja de estilos scss debemos activar el modo watch en el script del siguiente modo:
+>
 > ```
->"scripts": {
+> "scripts": {
 >    "sass": "sass --watch src/scss:build/css"
 >  }
->```
+> ```
 
 ### Enlazar hoja de estilos compilada al HTML
-En el ***index.html*** no hay que enlazar la hoja de estilos scss, sino que ***se debe enlazar el css generado a partir del script en la carpeta build***
+
+En el **_index.html_** no hay que enlazar la hoja de estilos scss, sino que **_se debe enlazar el css generado a partir del script en la carpeta build_**
 
 ```
 <link rel="stylesheet" href="build/css/app.css">
 ```
 
-Cada vez que realicemos un cambio y queremos que vayan a producción, debemos compilar de nuevo.
+## Gulp
+
+Ayuda a automatizar ciertos procesos.
+
+### Instalación
+
+```
+npm i -D gulp
+```
+
+### Configuración
+
+1. Crear el archivo `gulpfile.js`
+2. Crear funciones:
+    - Utilizar la palabra reservada `export` para tener acceso a la función desde `package.json`:
+        ```
+        export function hola(){
+        console.log('Hola desde Gulpfile.js');
+        }
+        ```
+    - Hay que añadir una línea al final para informar de que la función ha terminado. Se utiliza la función de callback que tiene por defecto siempre:
+        ```
+        export function hola( done ){
+        console.log('Hola desde Gulpfile.js');
+        done();
+        }
+        ```
+3. Añadir el script a `package.json`:
+   ```
+   "scripts": {
+   "[nombreScript]": "gulp [nombreFuncion]"
+   },
+   ``
+    ```
+### Compilación de SASS con Gulp
+
+#### Instalar la dependencia gulp-sass
+
+```
+npm i -D gulp-sass
+```
+
+#### Importar dependencias al archivo gulpfile
+
+```
+import * as gulpSass from 'sass'
+import gulpSass from 'gulp.sass'
+```
+#### Configurar la compilacion de sass con gulp
+```
+const sass = gulpSass(dartSass)
+```
+
+#### Crear la función para llamar desde package.json
+```
+export function css( done ) {
+    src('src/scss/app.scss') // source
+        .pipe( sass() ) // aplicar sass con la relación hecha previamente
+        .pipe( dest('build/css')) // carpeta destino
+
+    done();
+}
+```
+
+#### Llamar a la función con npm
+```
+npm run css
+```
+
+## Type en package.json
+Para que el token `export` de los scripts funcione bien con la sintaxis de EcmaScript6, es necesario ***añadir la siguiente línea ***en el archivo `package.json` debajo de ***description***:
+
+```
+"type": "module",
+``` 
 
 ## Carpeta modules al compartir el proyecto
 
@@ -122,7 +198,10 @@ Cuando compartimos el proyecto podemos **_eliminar la carpeta node_modules_** po
 Cuando descargamos el proyecto, podemos **_recuperarla utilizando npm_**.
 
 ```
+
 npm i
+
 ```
 
 Con el comando de arriba, **_node.js utilizará el archivo package.json para descargar las dependencias necesarias de nuevo, generando la carpeta node_modules automáticamente_**.
+```
