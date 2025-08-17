@@ -5,9 +5,9 @@ import gulpSass from 'gulp-sass' // importar gulp-sass
 const sass = gulpSass(dartSass); //enlazamos gulp con sas
 
 export function css( done ) {
-    src('src/scss/app.scss') // source
+    src('src/scss/app.scss', {sourcemaps: true}) // source
         .pipe(sass().on('error', sass.logError)) // aplicar sass con la relación hecha previamente
-        .pipe( dest('build/css')) // carpeta destino
+        .pipe( dest('build/css', {sourcemaps: '.'})) // carpeta destino
 
     done();
 }
