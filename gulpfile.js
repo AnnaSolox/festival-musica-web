@@ -25,4 +25,5 @@ export function dev() { // no pasamos el done para que no termine y siga escucha
 }
 
 // Inicializar todas las tareas cuando se abre la página
-export default series( js, css, dev )
+export const build = series(js, css);
+export default build;
