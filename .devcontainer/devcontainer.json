@@ -14,5 +14,6 @@
     "esbenp.prettier-vscode",
     "ritwickdey.LiveServer"
   ],
-  "remoteUser": "node"
+  "remoteUser": "node",
+  "runArgs": ["--name", "node-container"]
 }
