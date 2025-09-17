@@ -1,221 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Festival de música</title>
-    <link rel="stylesheet" href="build/css/app.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="build/css/app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="contenedor contenido-header">
-            <h1>Techno & EDM Festival</h1>
+      <div class="contenedor contenido-header">
+        <h1>Techno & EDM Festival</h1>
 
-            <nav class="navegacion-principal">
-                <a href="#lineup">Line Up</a>
-                <a href="#galeria">Galeria</a>
-                <a href="#boletos">Entradas</a>
-            </nav>
-        </div>
+        <nav class="navegacion-principal">
+          <a href="#lineup">Line Up</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#boletos">Entradas</a>
+        </nav>
+      </div>
     </header>
 
     <div class="video">
-        <div class="overlay">
-            <div class="contenedor contenido-video">
-                <h2>Techno & EDM Festival</h2>
-                <p>Julio 2026, CDMX, México</p>
-            </div>
+      <div class="overlay">
+        <div class="contenedor contenido-video">
+          <h2>Techno & EDM Festival</h2>
+          <p>Julio 2026, CDMX, México</p>
         </div>
-        <video autoplay muted loop>
-            <source src="video/dj.mp4" type="video/mp4">
-            <source src="video/dj.ogv" type="video/ogg"> <!-- Ya no se utiliza apenas este formato -->
-            <source src="video/dj.webm" type="video/webm">
-        </video>
+      </div>
+      <video autoplay muted loop>
+        <source src="video/dj.mp4" type="video/mp4" />
+        <source src="video/dj.ogv" type="video/ogg" />
+        <!-- Ya no se utiliza apenas este formato -->
+        <source src="video/dj.webm" type="video/webm" />
+      </video>
     </div>
 
     <section class="sobre-festival">
-        <picture class="imagen">
-            <source srcset="build/img/imagen_dj.avif" type="image/avif">
-            <source srcset="build/img/imagen_dj.webp" type="image/webp">
-            <img width="300" height="200" loading="lazy" src="build/img/imagen_dj.jpg" alt="Sobre Festival">
-        </picture>
-        <div class="contenido-festival">
-            <h2>Techno & EDM Festival</h2>
-            <p class="fecha">Julio 2026, CDMX, México</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium repellat excepturi cumque aspernatur
-                accusantium, cupiditate pariatur. Aperiam unde consequatur iure tempora dolorum magni nisi omnis
-                delectus eum nulla, enim dignissimos.</p>
-        </div>
+      <picture class="imagen">
+        <source srcset="build/img/imagen_dj.avif" type="image/avif" />
+        <source srcset="build/img/imagen_dj.webp" type="image/webp" />
+        <img
+          width="300"
+          height="200"
+          loading="lazy"
+          src="build/img/imagen_dj.jpg"
+          alt="Sobre Festival"
+        />
+      </picture>
+      <div class="contenido-festival">
+        <h2>Techno & EDM Festival</h2>
+        <p class="fecha">Julio 2026, CDMX, México</p>
+        <p>
+          Vive la experiencia electrónica más grande del año en el corazón de la
+          Ciudad de México. Un festival que reúne a los mejores DJs de la escena
+          internacional y nacional, con escenarios de última generación, luces,
+          visuales y un ambiente único.
+        </p>
+      </div>
     </section>
 
     <section id="lineup" class="lineup">
-        <h3>Line Up</h3>
+      <h3>Line Up</h3>
 
-        <p class="dia">Viernes 21</p>
-        <div class="escenarios-contenedor">
-            <div class="escenario bg-amarillo">
-                <p class="nombre-escenario">Techno</p>
+      <p class="dia">Viernes 21</p>
+      <div class="escenarios-contenedor">
+        <div class="escenario bg-amarillo">
+          <p class="nombre-escenario">Techno</p>
 
-                <ul class="calendario">
-                    <li>
-                        24:00 | <span>Adam Beyer</span>
-                    </li>
-                    <li>
-                        22:00 | <span>Carl Cox</span>
-                    </li>
-                    <li>
-                        20:00 | <span>HI-LO</span>
-                    </li>
-                    <li>
-                        19:00 | <span>Amelie Lens</span>
-                    </li>
-                    <li>
-                        18:00 | <span>CamelPhat</span>
-                    </li>
-                    <li>
-                        17:00 | <span>ARTBAT</span>
-                    </li>
-                </ul>
-            </div> <!--.escenario-->
+          <ul class="calendario">
+            <li>24:00 | <span>Adam Beyer</span></li>
+            <li>22:00 | <span>Carl Cox</span></li>
+            <li>20:00 | <span>HI-LO</span></li>
+            <li>19:00 | <span>Amelie Lens</span></li>
+            <li>18:00 | <span>CamelPhat</span></li>
+            <li>17:00 | <span>ARTBAT</span></li>
+          </ul>
+        </div>
+        <!--.escenario-->
 
-            <div class="escenario bg-verde">
-                <p class="nombre-escenario">EDM</p>
+        <div class="escenario bg-verde">
+          <p class="nombre-escenario">EDM</p>
 
-                <ul class="calendario">
-                    <li>
-                        24:00 | <span>David Guetta</span>
-                    </li>
-                    <li>
-                        22:00 | <span>Tïesto</span>
-                    </li>
-                    <li>
-                        20:00 | <span>Martin Garrix</span>
-                    </li>
-                    <li>
-                        19:00 | <span>Steve Aoki</span>
-                    </li>
-                    <li>
-                        18:00 | <span>Afrojack</span>
-                    </li>
-                    <li>
-                        17:00 | <span>Vintage Culture</span>
-                    </li>
-                </ul>
-            </div> <!--.escenario-->
-        </div> <!--.escenarios-contenedor -->
+          <ul class="calendario">
+            <li>24:00 | <span>David Guetta</span></li>
+            <li>22:00 | <span>Tïesto</span></li>
+            <li>20:00 | <span>Martin Garrix</span></li>
+            <li>19:00 | <span>Steve Aoki</span></li>
+            <li>18:00 | <span>Afrojack</span></li>
+            <li>17:00 | <span>Vintage Culture</span></li>
+          </ul>
+        </div>
+        <!--.escenario-->
+      </div>
+      <!--.escenarios-contenedor -->
 
+      <p class="dia">Sábado 22</p>
+      <div class="escenarios-contenedor contenedor">
+        <div class="escenario bg-verde">
+          <p class="nombre-escenario">Techno</p>
 
-        <p class="dia">Sábado 22</p>
-        <div class="escenarios-contenedor contenedor">
-            <div class="escenario bg-verde">
-                <p class="nombre-escenario">Techno</p>
+          <ul class="calendario">
+            <li>24:00 | <span>Reinier Zonneveld</span></li>
+            <li>22:00 | <span>Eric Prydz</span></li>
+            <li>20:00 | <span>Deadmau5</span></li>
+            <li>19:00 | <span>Joris Voorn</span></li>
+            <li>18:00 | <span>Nina Kraviz</span></li>
+            <li>17:00 | <span>Argy</span></li>
+          </ul>
+        </div>
+        <!--.escenario-->
 
-                <ul class="calendario">
-                    <li>
-                        24:00 | <span>Reinier Zonneveld</span>
-                    </li>
-                    <li>
-                        22:00 | <span>Eric Prydz</span>
-                    </li>
-                    <li>
-                        20:00 | <span>Deadmau5</span>
-                    </li>
-                    <li>
-                        19:00 | <span>Joris Voorn</span>
-                    </li>
-                    <li>
-                        18:00 | <span>Nina Kraviz</span>
-                    </li>
-                    <li>
-                        17:00 | <span>Argy</span>
-                    </li>
-                </ul>
-            </div> <!--.escenario-->
+        <div class="escenario bg-amarillo">
+          <p class="nombre-escenario">EDM</p>
 
-            <div class="escenario bg-amarillo">
-                <p class="nombre-escenario">EDM</p>
-
-                <ul class="calendario">
-                    <li>
-                        24:00 | <span>Armin Van Buuren</span>
-                    </li>
-                    <li>
-                        22:00 | <span>Calvin Harris</span>
-                    </li>
-                    <li>
-                        20:00 | <span>Hardwell</span>
-                    </li>
-                    <li>
-                        19:00 | <span>Above & Beyond</span>
-                    </li>
-                    <li>
-                        18:00 | <span>Diplo</span>
-                    </li>
-                    <li>
-                        17:00 | <span>Steve Angello</span>
-                    </li>
-                </ul>
-            </div> <!--.escenario-->
-        </div> <!--.escenarios-contenedor -->
+          <ul class="calendario">
+            <li>24:00 | <span>Armin Van Buuren</span></li>
+            <li>22:00 | <span>Calvin Harris</span></li>
+            <li>20:00 | <span>Hardwell</span></li>
+            <li>19:00 | <span>Above & Beyond</span></li>
+            <li>18:00 | <span>Diplo</span></li>
+            <li>17:00 | <span>Steve Angello</span></li>
+          </ul>
+        </div>
+        <!--.escenario-->
+      </div>
+      <!--.escenarios-contenedor -->
     </section>
 
     <section id="galeria" class="galeria">
-        <h3>Galería</h3>
-        <div class="galeria-imagenes"></div><!-- está vacío porque se inyecta con js -->
+      <h3>Galería</h3>
+      <div class="galeria-imagenes"></div>
+      <!-- está vacío porque se inyecta con js -->
     </section>
 
     <section id="boletos" class="contenedor-boletos">
-        <h3>Boletos</h3>
+      <h3>Boletos</h3>
 
-        <div class="boletos">
-            <div class="pase">
-                <p class="pase-nombre">Pase 1 Día</p>
-                <header class="pase-header">
-                    <p>Incluye</p>
-                </header>
-                <div class="pase-body">
-                    <ul>
-                        <li>Acceso a ambos escenarios</li>
-                        <li>Bebida Ilimitada</li>
-                        <li>Camisa / Pulsera del Evento</li>
-                    </ul>
-                </div>
-                <footer class="pase-footer">
-                    <p>$100</p>
-                </footer>
-            </div>
-            <div class="pase">
-                <p class="pase-nombre">Pase 2 Días</p>
-                <header class="pase-header">
-                    <p>Incluye</p>
-                </header>
-                <div class="pase-body">
-                    <ul>
-                        <li>Acceso a ambos escenarios</li>
-                        <li>Bebida Ilimitada</li>
-                        <li>Camisa / Pulsera del Evento</li>
-                        <li>Acceso VIP</li>
-                    </ul>
-                </div>
-                <footer class="pase-footer">
-                    <p>$180</p>
-                </footer>
-            </div>
+      <div class="boletos">
+        <div class="pase">
+          <p class="pase-nombre">Pase 1 Día</p>
+          <header class="pase-header">
+            <p>Incluye</p>
+          </header>
+          <div class="pase-body">
+            <ul>
+              <li>Acceso a ambos escenarios</li>
+              <li>Bebida Ilimitada</li>
+              <li>Camisa / Pulsera del Evento</li>
+            </ul>
+          </div>
+          <footer class="pase-footer">
+            <p>$100</p>
+          </footer>
         </div>
+        <div class="pase">
+          <p class="pase-nombre">Pase 2 Días</p>
+          <header class="pase-header">
+            <p>Incluye</p>
+          </header>
+          <div class="pase-body">
+            <ul>
+              <li>Acceso a ambos escenarios</li>
+              <li>Bebida Ilimitada</li>
+              <li>Camisa / Pulsera del Evento</li>
+              <li>Acceso VIP</li>
+            </ul>
+          </div>
+          <footer class="pase-footer">
+            <p>$180</p>
+          </footer>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <p>Techno & EDM Festival. Todos los derechos reservados.</p>
+      <p>Techno & EDM Festival. Todos los derechos reservados.</p>
     </footer>
 
     <script src="build/js/app.js"></script>
-
-</body>
-
+  </body>
 </html>
